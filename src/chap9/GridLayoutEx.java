@@ -32,11 +32,10 @@ import java.awt.*;
 }*/
 
 // 2
-public class GridLayoutEx extends JFrame {
+/*public class GridLayoutEx extends JFrame {
     GridLayoutEx() {
         setTitle("GridLayout Sample");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Container c = getContentPane();
         decorate();
         setSize(300, 200);
         setVisible(true);
@@ -52,6 +51,35 @@ public class GridLayoutEx extends JFrame {
         add(new JTextField(""));
         add(new JLabel(" 과목"));
         add(new JTextField(""));
+
+    }
+    public static void main(String[] args) {
+        new GridLayoutEx();
+    }
+}*/
+
+// 3
+public class GridLayoutEx extends JFrame {
+    GridLayoutEx() {
+        setTitle("GridLayout Sample");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        decorate();
+        setSize(300, 200);
+        setVisible(true);
+    }
+
+    public void decorate() {
+        JPanel pan = new JPanel();
+        pan.setLayout(new GridLayout(4, 2, 0, 5));
+        pan.add(new JLabel(" 이름"));
+        pan.add(new JTextField(""));
+        pan.add(new JLabel(" 학번"));
+        pan.add(new JTextField(""));
+        pan.add(new JLabel(" 학과"));
+        pan.add(new JTextField(""));
+        pan.add(new JLabel(" 과목"));
+        pan.add(new JTextField(""));
+        add(pan);
 
     }
     public static void main(String[] args) {

@@ -9,7 +9,7 @@ public class GridWin extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 200);
 
-        setLayout(new GridLayout(4, 2, 0, 5));
+        setLayout(new GridLayout(4, 2, 10, 5));
         add(new JButton("1")); add(new JButton("2")); add(new JButton("3"));
         add(new JButton("4")); add(new JButton("5")); add(new JButton("6"));
         add(new JButton("7")); add(new JButton("8")); add(new JButton("9"));
