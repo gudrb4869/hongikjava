@@ -5,7 +5,7 @@ import java.util.Vector;
 
 public class VectorTest {
     public static void main(String[] args) {
-        Vector<Object> vc = new Vector<Object>();
+        Vector<Object> vc = new Vector<Object>(); // Vector vc = new Vector(); 가능
         vc.add("Hello World!");
         vc.add(new Integer(10));
         vc.add(20);
@@ -16,7 +16,7 @@ public class VectorTest {
             System.out.println("vector element " + i + " :" + vc.get(i));
         }*/
 
-        Iterator<Object> it = vc.iterator();
+        Iterator<Object> it = vc.iterator(); // Iterator it = vc.iterator(); // 가능
         int i = 0;
         while (it.hasNext()) {
             System.out.println("vector element " + i++ + " :" + it.next());
