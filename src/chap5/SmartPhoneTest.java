@@ -17,7 +17,7 @@ interface MP3 {
 }
 
 class PDA {
-    int caculate(int a, int b) {
+    int calculate(int a, int b) {
         return a + b;
     }
 }
@@ -68,13 +68,13 @@ public class SmartPhoneTest {
         MobilePhone p = new SmartPhone();
         p.sendCall();
         ((MP3)p).play();
-        System.out.println(((PDA) p).caculate(3, 5));
+        System.out.println(((PDA) p).calculate(3, 5));
         ((SmartPhone) p).scheduler();
 
         /*SmartPhone p = new SmartPhone();
         p.sendCall();
         p.play();
-        System.out.println(p.caculate(3, 5));
+        System.out.println(p.calculate(3, 5));
         p.scheduler();*/
     }
 }
