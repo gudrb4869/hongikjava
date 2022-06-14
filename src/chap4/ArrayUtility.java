@@ -26,24 +26,18 @@ public class ArrayUtility {
         for (int i1 : i) {
             System.out.print("\t" + i1);
         }
-        System.out.println();
-        System.out.print("실수로 : ");
+        System.out.print("\n실수로 : ");
         for(double d1 : Array.intToDouble(i)) {
             System.out.print("\t" + d1);
         }
-        System.out.println();
 
-        System.out.println();
-
-        System.out.print("실수를 : ");
+        System.out.print("\n\n실수를 : ");
         for (double d1 : d) {
             System.out.print("\t" + d1);
         }
-        System.out.println();
-        System.out.print("정수로 : ");
+        System.out.print("\n정수로 : ");
         for(int i1 : Array.doubleToInt(d)) {
             System.out.print("\t" + i1);
         }
-        System.out.println();
     }
 }

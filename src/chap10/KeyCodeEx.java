@@ -13,8 +13,7 @@ public class KeyCodeEx extends JFrame {
         setTitle("Key Code 예제 : F1키:초록색, % 키 노란색");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // add(contentPane);
-        setContentPane(contentPane);
+        setContentPane(contentPane); // add(contentPane); 과 같음
         contentPane.addKeyListener(new MyKeyListener());
         contentPane.add(la);
         setSize(300, 150);

@@ -13,6 +13,7 @@ public class Hw10 extends JFrame {
         setTitle("Open Challenge 10");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         makeKeyDisplay();
+        add(contentPane);
         setSize(300, 200);
         setVisible(true);
         contentPane.setFocusable(true);
@@ -20,6 +21,7 @@ public class Hw10 extends JFrame {
     }
 
     void makeKeyDisplay() {
+        contentPane.setLayout(null);
         contentPane.addKeyListener(new MyKeyListener());
         for (int i = 0; i < label.length; i++) {
             label[i] = new JLabel("0"); // 레이블 생성
@@ -36,7 +38,6 @@ public class Hw10 extends JFrame {
         message.setHorizontalAlignment(JLabel.CENTER);
         message.setBounds(100, 100, 80, 30);
         add(message);
-        add(contentPane);
     }
 
     private class MyKeyListener extends KeyAdapter {
